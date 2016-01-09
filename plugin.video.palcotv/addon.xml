@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.palcotv" name="PalcoTV" version="0.3.2" provider-name="Juarrox">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" /> 
+    <import addon="plugin.video.youtube" />	
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.SportsDevil" optional="true"/>
+	<import addon="plugin.video.p2p-streams" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">PalcoTV</summary>
+    <description lang="en">[COLOR red][B]Palco TV[/B][/COLOR] te permitirá personalizar y exprimir al máximo todo el potencial de [B][COLOR blue]Kodi[/COLOR][/B] mediante menús XML y listas M3U cuya sencilla sintaxis te permitirá cargar tus series y películas favoritas, canales de televisión y vídeos gracias al soporte de infinidad de servidores multimedia. Además PalcoTV te ofrece su propio scraper de películas que guardará los metadatos en listas M3U y muchos extras más.</description>
+    <disclaimer lang="en">[B]Queda prohibida la distribución de este addon junto con contenidos multimedia protegidos por derechos de autor.[/B] La vulneración de esta prohibición exonerará de culpa a su autor siendo el único responsable quien lo haya distribuido ilegalmente.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
