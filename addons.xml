@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.program.myip" name="My IP" version="1.0.3" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.adryanlist"
        name="AdryanList"
        version="2.0.1"
@@ -22,6 +36,35 @@
   <extension point="xbmc.addon.metadata">
     <summary>based on livestreamspro 2.0.1 by Shani</summary>
     <description>Lista de canales de Adryan.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.bassfox" name="[COLOR dodgerblue]Ba[COLOR lightblue]ss[/COLOR]Fox[/COLOR]" version="1.5.8" provider-name="BassFox">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>BASSFOX based on LivetreamsPro by Shani "All rights to this author"</summary>
+    <description lang="en">[COLOR cyan][B]BassFox[/B][/COLOR] [COLOR white]- Is an Add-on [COLOR blue][B]Kodi[/B][/COLOR] with which you can enjoy free TV channels, if you are charging for this Add-on asks for money back.
+This Add-on has a collection of list live tv channels mostly in Spanish language, Thank you for your preference [COLOR cyan][B]BassFox[/B][/COLOR] based on LivetreamsPro by SHANI[/COLOR]</description>
+<description lang="es">[COLOR cyan][B]BassFox[/B][/COLOR][COLOR white] - Es un Add-on de [COLOR blue][B]Kodi[/B][/COLOR] con el cual podrás disfrutar de canales de tv y películas gratis, si te están cobrando por este Add-on pide la devolución de tu dinero.
+Gracias por su preferencia [COLOR cyan][B]BassFox[/B][/COLOR] based on LivetreamsPro by SHANI[/COLOR]</description>
+     <disclaimer lang="en">Using this add-on is free and at your own risk if the law prohibits the use </disclaimer>
+		<disclaimer lang="es">El uso de este Add-on es gratuito y bajo tu responsabilidad si las leyes de tu país restringuen su uso</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
@@ -67,6 +110,31 @@
         <summary lang="es">se habla en castellano</summary>
         <description lang="en">This Add-on is a viewer for EstrenoTorrent</description>
         <description lang="es">Este es un Add-on es un visor para EstrenoTorrent</description>
+        <language></language>
+        <platform>all</platform>
+        <forum></forum>
+        <disclaimer lang="en">It is just for educational purpose[CR]Check if it is illegal in your country to use.
+        </disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
+</addon>
+
+<addon id="plugin.video.newpct1" name="[COLOR FFFF0000]NewPCT1[/COLOR] viewer" version="1.2.2"
+       provider-name="mancuniancol">
+    <requires>
+        <import addon="xbmc.python" version="2.12.0"/>
+        <import addon="script.module.mctools" optional="false"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Movies and Tv Shows</summary>
+        <summary lang="es">Películas y series`</summary>
+        <description lang="en">This Add-on is a viewer for NewPCT1</description>
+        <description lang="es">Este es un Add-on es un visor para NewPCT1</description>
         <language></language>
         <platform>all</platform>
         <forum></forum>
@@ -159,6 +227,27 @@
     <description>Play videos of different Channels streaming sites Updated DMO: 22/11/2015 (from HUBBA3´s Version 22/11/2015)... +Info in Change Log - +Info en Registro de Cambios (Gracias Goldonx, Quequeq y Jxxxxxx!!)... Soporte para p2p con Plugin PLEXUS</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.spotitube" name="Youtube Music" version="1.0.5.1" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Play music videos via Youtube</summary>
+        <language></language>
+        <description lang="en">Play music videos via Youtube</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/AddonScriptorDE/plugin.video.spotitube</source>
+        <forum>http://forum.xbmc.org/showthread.php?tid=</forum>
+        <email>AddonScriptorDE at yahoo dot de</email>
+        <website></website>
+    </extension>
 </addon>
 
 <addon id="plugin.video.tvalacarta"
@@ -290,6 +379,40 @@
 	</extension>
 </addon>
 
+<addon id="script.pulsar.newpct" name="Pulsar Newpct Provider" version="0.0.3" provider-name="gomezvd">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="plugin.video.pulsar" version="0.3"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulsar kickass multilanguage Provider</summary>
+		<language></language>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.pulsar.thepiratebay-mc" name="Pulsar MC's [COLOR FF89cc48]The Pirate Bay[/COLOR] Provider" version="3.1.5" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulsar ThePirateBay Provider</summary>
+		<description lang="en">This provider allows to choose the quality of video torrent which will feed Pulsar.[CR]You need to config the add-on before using Pulsar[CR]It works with Movies and TV Shows</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
 <addon id="script.search.play2kd" name="[COLOR FFF35C9F]Search+Play[/COLOR]2KD" version="1.0.3" provider-name="mancuniancol">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
@@ -323,6 +446,29 @@
 		<platform>all</platform>
 		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
 		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="script.videoteca2kd" name="[COLOR FFC0392B]Videoteca[/COLOR]2KD - TVGUIA" version="1.0.14" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="plugin.video.pelisalacarta" optional="true"/>
+		<import addon="script.module.mctools" optional="false"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Videoteca - TVGuia</summary>
+		<description lang="en">This script creates .strm files from www.yaske.cc and seriesflv.net to be played by pelisalacarta from the local library</description>
+        <description lang="sp">Este script crea archivos .strm a partir de www.yaske.cc y seriesflv.net para ser reproducidos por pelisalacarta desde la libreria local</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	</extension>
 </addon>
