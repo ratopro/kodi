@@ -185,7 +185,7 @@ Gracias por su preferencia [COLOR cyan][B]BassFox[/B][/COLOR] based on Livetream
   </extension>
 </addon>
 
-<addon id="plugin.video.pulsar" name="Pulsar" version="0.6.1" provider-name="steeve">
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.6.2" provider-name="steeve-i96751414">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -319,6 +319,48 @@ Gracias por su preferencia [COLOR cyan][B]BassFox[/B][/COLOR] based on Livetream
    		<description lang="es">Instala los Addons de Ratopro.</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.divxatope2pulsar" name="Pulsar [COLOR FF6CCECB]DIVXATOPE2PULSAR[/COLOR] Español" version="0.4.1" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">DIVXATOPE2PULSAR2PULSAR</summary>
+		<description lang="en">This script creates .strm files from divxatope to be play for pulsar from the local library</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="script.elitetorrent2pulsar" name="Pulsar [COLOR FF6CCECB]ELITETORRENT2PULSAR[/COLOR] Español" version="0.4.1" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">ELITETORRENT2PULSAR2PULSAR</summary>
+		<description lang="en">This script creates .strm files from YTS to be play for pulsar from the local library</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	</extension>
 </addon>
 
