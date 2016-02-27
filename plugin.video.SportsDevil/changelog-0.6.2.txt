@@ -1,3 +1,17 @@
+v 2016.02.01.-bfx (02-feb-16)
+------------------------------
+- Fix: sites Streams catchers (thanks to HUBBAB3)
+- New: StreamS in slplay, sgr
+- fix: Live Sports TV Unblocked
+- Some minor fixes and catcher updates (thanks to HUBBAB3)
+
+v 1.8.8.0 (17-Oct-14)
+------------------------------
+- Fix: iLive (thanks to L2501)
+- New: StreamHD in Sports TV
+- New: HitSports in Sports TV
+- Some minor fixes and catcher updates (thanks to L2501)
+
 v 1.8.8.0 (17-Oct-14)
 ------------------------------
 - Fix: iLive (thanks to L2501)
